@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.05d74f49.css",
+    "main.js": "/static/js/main.59967742.js",
+    "static/js/787.69b12325.chunk.js": "/static/js/787.69b12325.chunk.js",
+    "static/media/scientist.png": "/static/media/scientist.70f77eebd6fd0685df27.png",
+    "static/media/cook.png": "/static/media/cook.6314ff428186c847e9dd.png",
+    "static/media/detective.png": "/static/media/detective.5c664eb16663283c66e3.png",
+    "static/media/farmer.png": "/static/media/farmer.14e57bcab2ca4cf08715.png",
+    "static/media/artist.png": "/static/media/artist.44fde02811806a206eeb.png",
+    "static/media/factory-worker.png": "/static/media/factory-worker.74fc71c7977f8b7e59b6.png",
+    "static/media/judge.png": "/static/media/judge.8f9471ef9c2a40e23daf.png",
+    "static/media/pilot.png": "/static/media/pilot.5d36cb93a588961b8a70.png",
+    "static/media/mechanic.png": "/static/media/mechanic.fc38bf18e808a7d5fe49.png",
+    "static/media/firefighter.png": "/static/media/firefighter.9811284d749cb12f9193.png",
+    "static/media/police-officer.png": "/static/media/police-officer.a480272d50d857ca1d9b.png",
+    "static/media/technologist.png": "/static/media/technologist.cb5fe77c2d8e28146035.png",
+    "static/media/astronaut.png": "/static/media/astronaut.222806fa3ad7858493bc.png",
+    "static/media/office-worker.png": "/static/media/office-worker.4ece0c1669e3db13eaf3.png",
+    "static/media/construction-worker.png": "/static/media/construction-worker.85218d2682b765c7c009.png",
+    "static/media/man-student.png": "/static/media/man-student.8289f8cafb0fed3a75d8.png",
+    "index.html": "/index.html",
+    "main.05d74f49.css.map": "/static/css/main.05d74f49.css.map",
+    "main.59967742.js.map": "/static/js/main.59967742.js.map",
+    "787.69b12325.chunk.js.map": "/static/js/787.69b12325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05d74f49.css",
+    "static/js/main.59967742.js"
+  ]
+}
