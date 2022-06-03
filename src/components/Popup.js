@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-export default function Popup({id, callback, children}) {
+export default function Popup({id, callback, allowMute = true, children}) {
   const [showPopup, setShowPopup] = useState(true)
 
   const popup = (
@@ -9,21 +9,25 @@ export default function Popup({id, callback, children}) {
         {children}
         
         <form className="popup-form">
-          <label>
-            Don't show this again:
-            <input type="checkbox" name='showPopup' />
-          </label>
+          {allowMute ?
+            <label>
+              Don't show this again:
+              <input type="checkbox" name='showPopup' />
+            </label> : null}
         
-          <button type='button' className='dismiss-intro'>Continue</button>
+          <button type='button' className='dismiss-popup'>Continue</button>
         </form>
       </div>
     </div>
   )
 
   function dismissPopup(e) {
-    if (e.target.tagName !== 'BUTTON') return
-    const showAgain = !e.currentTarget.querySelector('input').checked
-    localStorage.setItem(id, JSON.stringify({ showAgain: showAgain }))
+    if (e.target.className !== 'dismiss-popup') return
+    
+    if (allowMute) {
+      const showAgain = !e.currentTarget.querySelector('input').checked
+      localStorage.setItem(id, JSON.stringify({ showAgain: showAgain }))
+    } 
     if(callback) {callback()}
     setShowPopup(false)
   }
@@ -31,9 +35,7 @@ export default function Popup({id, callback, children}) {
   useEffect(() => {
     if (JSON.parse(localStorage.getItem(id))?.showAgain === false) {
       setShowPopup(false)
-    } else {
-      setShowPopup(true)
-    }
+    } 
   }, [id])
 
   

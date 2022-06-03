@@ -12,7 +12,10 @@ function App() {
       <MemoryGame />
       
       <Popup id='intro-popup'>
-        Instructions Here!
+        <p>
+          Click every card without clicking the same card twice!
+        </p>
+        Each level gets progressively harder, enjoy!
       </Popup>
 
     </div>

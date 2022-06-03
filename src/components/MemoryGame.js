@@ -42,7 +42,7 @@ export default function MemoryGame() {
   }
 
   function gameOver() {
-    setState({ ...state, gameOver: true, clicks: state.clicks = 1 })
+    setState({ ...state, gameOver: true, clicks: state.clicks + 1 })
   }
 
   function graduateLevel() {
@@ -77,7 +77,9 @@ export default function MemoryGame() {
   })
 
   const popup = (state.gameOver) ?
-    <Popup id='gameOver' callback={restartGame}>You Won in {state.clicks} clicks!</Popup> : null;
+    <Popup id='gameOver' allowMute={false} callback={restartGame}>
+      You Won in {state.clicks} clicks!
+    </Popup> : null;
   
   return (
     <div className="game">
